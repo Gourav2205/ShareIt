@@ -211,7 +211,7 @@ export async function getTotalSpaceUsed() {
       audio: { size: 0, latestDate: "" },
       other: { size: 0, latestDate: "" },
       used: 0,
-      all: 100 * 1024 * 1024 * 1024 /* 100GB available bucket storage */,
+      all: 10 * 1024 * 1024 * 1024 /* 100GB available bucket storage */,
     };
 
     files.documents.forEach((file) => {
