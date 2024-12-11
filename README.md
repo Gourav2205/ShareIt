@@ -1037,5 +1037,5 @@ declare interface ShareInputProps {
 ## <a name="links">🔗 Assets</a>
 
 - Assets used in the project can be found [here](https://github.com/Gourav2205/ShareIt/tree/main/public/assets)
-- Original Figma deisgn can be found [here](https://www.figma.com/design/jE2nOPlszS7LypQmPInBpx/StoreIt---Google-Drive-Clone-(Copy)?node-id=2-2&t=kJe4DC3CmIxjAnQU-1)
+- The original **Figma** deisgn can be found [here](https://www.figma.com/design/jE2nOPlszS7LypQmPInBpx/StoreIt---Google-Drive-Clone-(Copy)?node-id=2-2&t=kJe4DC3CmIxjAnQU-1)
 
