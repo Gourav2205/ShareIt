@@ -110,8 +110,6 @@ export const getFiles = async ({
       appwriteConfig.filesCollectionId,
       queries,
     );
-
-    console.log({ files });
     return parseStringify(files);
   } catch (error) {
     handleError(error, "Failed to get files");
@@ -234,3 +232,4 @@ export async function getTotalSpaceUsed() {
     handleError(error, "Error calculating total space used:, ");
   }
 }
+
