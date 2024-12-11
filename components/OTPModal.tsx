@@ -19,7 +19,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { verifySecret, sendEmailOTP } from "@/lib/actions/user.actions";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation"
 
 const OtpModal = ({
   accountId,

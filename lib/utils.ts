@@ -25,7 +25,7 @@ export const convertFileSize = (sizeInBytes: number, digits?: number) => {
 };
 
 export const calculatePercentage = (sizeInBytes: number) => {
-  const totalSizeInBytes = 2 * 1024 * 1024 * 1024; // 2GB in bytes
+  const totalSizeInBytes = 100 * 1024 * 1024 * 1024; // 100GB in bytes
   const percentage = (sizeInBytes / totalSizeInBytes) * 100;
   return Number(percentage.toFixed(2));
 };
@@ -110,8 +110,6 @@ export const formatDateTime = (isoString: string | null | undefined) => {
   return `${time}, ${day} ${month}`;
 };
 
-// type FileType = "document" | "image" | "video" | "audio" | "other";
-
 export const getFileIcon = (
   extension: string | undefined,
   type: FileType | string,
@@ -184,21 +182,8 @@ export const constructDownloadUrl = (bucketFileId: string) => {
   return `${process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT}/storage/buckets/${process.env.NEXT_PUBLIC_APPWRITE_BUCKET}/files/${bucketFileId}/download?project=${process.env.NEXT_PUBLIC_APPWRITE_PROJECT}`;
 };
 
-type SpaceItem = {
-  size: number;
-  latestDate: string; // or Date if you're using Date objects
-};
-
-type TotalSpace = {
-  document: SpaceItem;
-  image: SpaceItem;
-  video: SpaceItem;
-  audio: SpaceItem;
-  other: SpaceItem;
-};
-
 // DASHBOARD UTILS
-export const getUsageSummary = (totalSpace: TotalSpace) => {
+export const getUsageSummary = (totalSpace: any) => {
   return [
     {
       title: "Documents",
